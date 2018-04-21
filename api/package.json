@@ -30,13 +30,16 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": ". ../env.sh; node index.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/GetStream/stream-react-example.git"
 	},
-	"keywords": ["GetStream"],
+	"keywords": [
+		"GetStream"
+	],
 	"author": "Nick Parsons <nick@getstream.io>",
 	"license": "ISC",
 	"bugs": {

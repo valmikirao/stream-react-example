@@ -6,7 +6,8 @@
 		"doc": "docs"
 	},
 	"scripts": {
-		"start": "node ./bin/www"
+		"start": ". ../env.sh; node ./bin/www",
+		"webpack": ". ../env.sh; webpack --progress"
 	},
 	"engines": {
 		"node": "9.x"
@@ -52,14 +53,14 @@
 		"nock": "^9.1.6",
 		"node-sass": "^4.7.2",
 		"numeral": "^2.0.6",
-		"react": "^16.2.0",
+		"react": "^15.6.2",
 		"react-addons-test-utils": "^15.6.2",
-		"react-dom": "^16.2.0",
+		"react-dom": "15.6.2",
 		"react-geocoder": "^2.5.0",
 		"react-image-component": "^1.0.0",
 		"react-ink": "^6.2.0",
 		"react-redux": "^5.0.6",
-		"react-router": "4.2.0",
+		"react-router": "3.2.0",
 		"react-router-redux": "^4.0.8",
 		"react-tap-event-plugin": "^3.0.2",
 		"redux": "^3.7.2",
@@ -76,7 +77,9 @@
 		"type": "git",
 		"url": "git+https://github.com/GetStream/stream-react-example.git"
 	},
-	"keywords": ["GetStream"],
+	"keywords": [
+		"GetStream"
+	],
 	"author": "Nick Parsons <nick@getstream.io>",
 	"license": "ISC",
 	"bugs": {
